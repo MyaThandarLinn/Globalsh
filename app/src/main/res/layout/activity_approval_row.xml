@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="center"
+        android:src="@drawable/ic_document"/>
+
+    <TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:text="[전자결재] 테스트 1"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/txt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt01"
+        android:layout_margin="0dp"
+        android:layout_toRightOf="@+id/img"
+        android:drawableLeft="@drawable/ic_clock"
+        android:drawablePadding="5dp"
+        android:text="2016-03-07 23:33"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        />
+
+    <TextView
+            android:id="@+id/txt04"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:layout_alignBottom="@+id/txt02"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt01"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="5dp"
+            android:text="홍길동"
+            android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginTop="-15dp" android:layout_marginStart="0dp" android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"/>
+
+    <TextView
+        android:id="@+id/txt03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txt02"
+        android:layout_margin="0dp"
+        android:layout_toLeftOf="@+id/txt04"
+        android:drawableLeft="@drawable/ic_clip"
+        android:drawablePadding="5dp"
+        android:paddingRight="5dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#5C6BC0"
+          android:layout_alignBottom="@+id/txt03"
+    />
+
+</RelativeLayout>

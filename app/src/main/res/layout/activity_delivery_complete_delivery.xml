@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+>
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/dcd_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:titleTextColor="#fff"
+            app:subtitleTextColor="#f5fbff"
+            android:padding="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/dcd_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="30dp">
+
+            <TextView
+                    android:text="@string/dlv_custname"
+                    style="@style/label_text_style"
+                    android:id="@+id/textView39" app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/dcd_nm_person"
+                    android:layout_marginStart="8dp" android:layout_marginTop="32dp"
+                    app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                    android:text="@string/dlv_phone"
+                    style="@style/label_text_style" android:id="@+id/textView40"
+                    app:layout_constraintTop_toTopOf="@+id/dcd_nm_person"
+                    app:layout_constraintBottom_toBottomOf="@+id/dcd_nm_person"
+                    app:layout_constraintStart_toEndOf="@+id/dcd_nm_person" app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toStartOf="@+id/dcd_no_hp"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="5dp"
+                    style="@style/edit_text_style"
+                    android:id="@+id/dcd_address_detail" app:layout_constraintStart_toStartOf="@+id/dcd_address"
+                    app:layout_constraintEnd_toEndOf="@+id/dcd_address"
+                    app:layout_constraintTop_toBottomOf="@+id/dcd_address" android:layout_marginTop="16dp"/>
+            <EditText
+                    android:layout_width="0dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    style="@style/edit_text_style"
+                    android:id="@+id/dcd_nm_confirm" app:layout_constraintStart_toStartOf="@+id/dcd_address_detail"
+                    app:layout_constraintEnd_toEndOf="@+id/dcd_address_detail"
+                    app:layout_constraintTop_toTopOf="@+id/textView61"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView61"/>
+            <TextView
+                    android:layout_width="0dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="5dp"
+                    style="@style/edit_text_style"
+                    android:id="@+id/dcd_address" app:layout_constraintStart_toStartOf="@+id/dcd_nm_person"
+                    app:layout_constraintEnd_toEndOf="@+id/dcd_no_hp" app:layout_constraintTop_toTopOf="@+id/textView48"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView48"/>
+            <TextView
+                    android:layout_width="109dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    style="@style/edit_text_style"
+                    android:id="@+id/dcd_nm_person" app:layout_constraintTop_toTopOf="@+id/textView39"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView39"
+                    app:layout_constraintStart_toEndOf="@+id/textView39" app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toStartOf="@+id/textView40"/>
+            <TextView
+                    android:layout_width="109dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:padding="5dp"
+                    style="@style/edit_text_style"
+                    android:id="@+id/dcd_no_hp" app:layout_constraintTop_toTopOf="@+id/textView40"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView40"
+                    app:layout_constraintStart_toEndOf="@+id/textView40" app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginEnd="8dp"/>
+            <TextView
+                    android:text="@string/dlv_address"
+                    android:layout_width="0dp"
+                    style="@style/label_text_style"
+                    android:id="@+id/textView48" android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView39"
+                    app:layout_constraintStart_toStartOf="@+id/textView39"
+                    app:layout_constraintEnd_toEndOf="@+id/textView39"/>
+            <TextView
+                    android:text="@string/checker"
+                    android:layout_width="0dp"
+                    style="@style/label_text_style" android:id="@+id/textView61"
+                    app:layout_constraintStart_toStartOf="@+id/textView48"
+                    app:layout_constraintEnd_toEndOf="@+id/textView48" app:layout_constraintHorizontal_bias="1.0"
+                    android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/dcd_recycler"/>
+            <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/dcd_sp_relation"
+                    android:scrollbars="vertical"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/spinner_bg"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/dcd_nm_confirm"
+                    app:layout_constraintTop_toTopOf="@+id/textView62"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView62"/>
+
+            <LinearLayout android:layout_width="0dp"
+                          android:layout_height="100dp"
+                          android:padding="3dp"
+                          style="@style/edit_text_style"
+                          app:layout_constraintStart_toStartOf="@+id/textView12"
+                          app:layout_constraintEnd_toEndOf="@+id/textView12" app:layout_constraintHorizontal_bias="0.0"
+                          android:id="@+id/linearLayout7"
+                          android:layout_marginTop="24dp" app:layout_constraintTop_toBottomOf="@+id/textView64">
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text|textMultiLine"
+                        android:background="@color/color_transparent"
+                        android:gravity="top"
+                        android:padding="5dp"
+                        android:textSize="14sp"
+                        android:paddingBottom="50dp"
+                        android:enabled="false"
+                        android:id="@+id/dcd_dc_notdlv"
+                        tools:layout_editor_absoluteY="792dp"
+                        tools:layout_editor_absoluteX="238dp"/>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="160dp"
+                          android:layout_height="30dp"
+                          android:background="@drawable/rounded_background_2"
+                          app:layout_constraintTop_toTopOf="@+id/textView64"
+                          app:layout_constraintBottom_toBottomOf="@+id/textView64"
+                          android:layout_marginStart="8dp"
+                          app:layout_constraintStart_toEndOf="@+id/textView64">
+                <com.jaredrummler.materialspinner.MaterialSpinner
+                        android:id="@+id/dcd_cd_nodlv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:ms_dropdown_max_height="250dp"
+                        app:ms_padding_left="10dp"
+                        style="@style/edit_text_style"
+                        android:backgroundTint="#11000000"
+                        app:ms_padding_top="1dp"
+                        app:ms_padding_bottom="1dp"
+                        app:ms_padding_right="2dp"
+                        app:ms_popup_padding_left="10dp"
+                        app:ms_popup_padding_top="-2dp"
+                        app:ms_popup_padding_bottom="-2dp"/>
+            </LinearLayout>
+            <TextView
+                    android:text="@string/relations"
+                    android:layout_width="0dp"
+                    style="@style/label_text_style"
+                    android:id="@+id/textView62" android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView61"
+                    app:layout_constraintStart_toStartOf="@+id/textView61"
+                    app:layout_constraintEnd_toEndOf="@+id/textView61"/>
+            <TextView
+                    android:text="@string/date_confirm"
+                    style="@style/label_text_style" android:id="@+id/textView63"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="@+id/dcd_sp_relation"
+                    app:layout_constraintBottom_toBottomOf="@+id/dcd_sp_relation"
+                    app:layout_constraintEnd_toStartOf="@+id/dlv_com_date_picker"/>
+
+            <LinearLayout
+                    android:id="@+id/dlv_com_date_picker"
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:weightSum="10"
+                    android:layout_gravity="center"
+                    app:layout_constraintStart_toEndOf="@+id/textView63"
+                    app:layout_constraintTop_toTopOf="@+id/textView63"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView63"
+                    app:layout_constraintEnd_toEndOf="@+id/dcd_nm_confirm">
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dcd_dt_dlv_btn_left"
+                        android:background="@drawable/button_left"
+                        android:layout_weight="2"/>
+                <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dcd_dt_dlv_tv"
+                        android:layout_weight="6"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        android:background="@drawable/date_picker_rounded"
+                        android:gravity="center"/>
+                <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/dcd_dt_dlv_btn_right"
+                        android:background="@drawable/button_right"
+                        android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:text="TextView"
+                    android:layout_width="0dp"
+                    android:background="@drawable/signature_pad_rounded_background"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:id="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView62"
+                    app:layout_constraintStart_toStartOf="@+id/textView62"
+                    app:layout_constraintEnd_toEndOf="@+id/dlv_com_date_picker" android:layout_marginTop="24dp">
+                <TextView
+                        android:text="@string/cust_varification_sign"
+                        style="@style/main_textView_style"/>
+                <View android:layout_width="match_parent"
+                      android:layout_height="1dp"
+                      android:background="@color/iron"
+                />
+                <com.github.gcacace.signaturepad.views.SignaturePad
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/dcd_imgV"
+                        android:src="@drawable/dcconfirm"
+                        app:penColor="@android:color/black"
+                />
+            </LinearLayout>
+            <TextView
+                    android:text="@string/DCD"
+                    style="@style/label_text_style" android:id="@+id/textView64"
+                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_clear" android:layout_marginTop="24dp"/>
+
+            <Button
+                    android:text="@string/save_text"
+                    android:layout_width="80dp"
+                    style="@style/button_style_1"
+                    android:id="@+id/dcd_signature_save"
+                    android:enabled="false"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_clear"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintTop_toTopOf="@+id/btn_clear"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_clear"/>
+            <Button
+                    android:text="@string/cancel_text"
+                    android:layout_width="80dp"
+                    style="@style/button_style_2"
+                    android:id="@+id/btn_clear"
+                    android:enabled="false"
+                    app:layout_constraintEnd_toEndOf="@+id/textView12"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12"
+            />
+            <Button
+                    android:text="@string/shipping_list"
+                    android:layout_width="80dp"
+                    style="@style/button_style_1"
+                    android:id="@+id/btn_go_to_pg_4"
+                    app:layout_constraintStart_toStartOf="@+id/btn_save_and_stay"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_save_and_stay" android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_save_and_stay"/>
+            <Button
+                    android:text="@string/confirm"
+                    android:layout_width="80dp"
+                    style="@style/button_style_1"
+                    android:id="@+id/btn_save_and_stay"
+                    android:enabled="false"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout7"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+                    android:layout_marginStart="8dp" android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintHorizontal_bias="1.0"/>
+            <Button
+                    android:text="@string/btn_dl_detail"
+                    android:layout_width="80dp"
+                    style="@style/button_style_1" android:id="@+id/btn_go_to_pg5"
+                    app:layout_constraintTop_toTopOf="@+id/btn_go_to_pg_4"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_go_to_pg_4"
+                    app:layout_constraintStart_toStartOf="@+id/btnCls" app:layout_constraintEnd_toEndOf="@+id/btnCls"/>
+            <androidx.constraintlayout.widget.Guideline
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/guideline2"
+                    app:layout_constraintGuide_percent="0.5"/>
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="327dp"
+                    android:layout_height="28dp"
+                    android:background="@color/table_header"
+                    android:id="@+id/linearLayout3" android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@+id/dcd_address_detail"
+                    app:layout_constraintEnd_toEndOf="@+id/dcd_address_detail"
+                    app:layout_constraintStart_toStartOf="@+id/textView48" android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp">
+                <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent"
+                        android:text="No"
+                        android:gravity="center"
+                        android:background="@drawable/table_bg"/>
+                <TextView
+                        android:background="@drawable/table_bg"
+                        android:text="@string/product_name_1"
+                        android:layout_width="172dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent"/>
+                <TextView
+                        android:text="SN"
+                        android:gravity="center"
+                        android:background="@drawable/table_bg"
+                        android:layout_width="135dp"
+                        android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout3"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout3"
+                    android:id="@+id/dcd_recycler" app:layout_constraintTop_toBottomOf="@+id/linearLayout3"/>
+            <Button
+                    android:text="@string/cancel"
+                    android:layout_width="80dp"
+                    style="@style/button_style_1"
+                    android:id="@+id/btnCls"
+                    app:layout_constraintTop_toTopOf="@+id/btn_save_and_stay"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_save_and_stay"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout7" android:layout_marginEnd="80dp"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2" android:layout_marginStart="8dp"
+                    app:layout_constraintHorizontal_bias="0.0"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">SmartGW</string>
+    <string name="login">Login</string>
+    <string name="start">Start</string>
+    <string name="id">Id</string>
+    <string name="password">Password</string>
+    <string name="services">Services</string>
+    <string name="Id_error_string">ID를 넣어주세요</string>
+    <string name="Password_error_string">정확한 암호를 넣어주세요</string>
+    <string name="firm_code_title">회사코드 설정</string>
+    <string name="firm_code_summary">회사코드를 설정합니다.</string>
+    <string name="server_ip_title">IP설정</string>
+    <string name="server_ip_summary">회사 IP를 설정합니다.</string>
+    <string name="setting_title">디폴트 설정</string>
+    <string name="ok_text">OK</string>
+    <string name="success_text">Save to Sharedpreferences Successfully!!</string>
+    <string name="company_code_setup">회사 코드 설정</string>
+    <string name="ip_setting">IP 설정</string>
+    <string name="installation_confirm">설치 확인서</string>
+    <string name="customer_name">고객 명</string>
+    <string name="phone_number">전화 번호</string>
+    <string name="address">주소</string>
+    <string name="product_installation_things_to_check">제품 설치 점검 사항</string>
+
+    <string name="shp_file_name">SWG_PREF</string>
+    <string name="shpDefaultValue">error</string>
+    <string name="sp_grw_app_count_mbl">SP_GRW_APP_COUNT_MBL</string>
+    <string name="sp_grw_app_detail_mbl">SP_GRW_APP_DETAIL_MBL</string>
+    <string name="up_mob_get_app_body">UP_MOB_GET_APP_BODY</string>
+    <string name="sap_grw_app_read_his">SP_GRW_APP_READ_HIS</string>
+    <string name="send_email">Send Email</string>
+
+    <!--Errors-->
+    <string name="add_all_require_fields">Add all required fields!</string>
+    <string name="msg_connection_error">서버와의 연결에 문제가 있습니다.\n연결 상태를 확인하세요.</string>
+    <string name="msg_login_failed">로그인이 실패하였습니다.</string>
+    <string name="your_device_is_not_support">Your device is no supported</string>
+
+    <string name="collection_of_pinfo_agree">개인 정보 수집, 이용 동의</string>
+
+    <!--request URLs-->
+    <string name="sp_mbl_dlv_s">SP_MBL_DLV_S</string>
+    <string name="sp_mbl_crm_s">SP_MBL_CRM_S</string>
+    <string name="shipping_mbl_mas_codel_s_01">SP_MBL_MAS_CODEL_S_01</string>
+    <string name="shipping_mbl_mas_codel_s_01_child">SP_MBL_MAS_CODEL_S_01_DETAIL</string>
+    <string name="as_complete_sp_mbl_crm_sol_01">SP_MBL_CRM_SOL_S01</string>
+    <string name="symptom_code_list">SP_CRM_SYMPTOMCODE_S_01</string>
+    <string name="repair_code_list">SP_CRM_REPAIRCODE_S_01</string>
+    <string name="mobile_login_url">UP_MOB_CHECK_LOGIN</string>
+    <string name="mobile_id_upload_url">UP_MOB_DEVICE_ID_I</string>
+    <string name="shelf">선반</string>
+    <string name="adapter">어댑터</string>
+    <string name="battery">설명서</string>
+    <string name="manual">조작</string>
+    <string name="key">키</string>
+    <string name="jewelry_boxes">보석 함</string>
+
+    <string name="item_help">품목도움</string>
+    <string name="circulation">유통</string>
+    <string name="part_number">품번</string>
+    <string name="Municipality">시군구</string>
+
+    <string name="no">NO</string>
+    <string name="bom_um_supply">BOM.UM_SUPPLY</string>
+    <string name="product_name_used_part">제품명</string>
+    <string name="unit_price">상품명</string>
+    <string name="quantity">상품명</string>
+    <string name="confirm">확인</string>
+    <string name="cancel">취소</string>
+    <string name="lookup">조회</string>
+    <string name="usedparts">사용부품</string>
+
+
+    //UI string
+    <string name="dialog_negative">아니요</string>
+    <string name="dialog_positive">예</string>
+    <string name="msg_finish">종료하시겠습니까?</string>
+    <string name="check_1_string">1. 제품의 외관 이상 유무는 확인하셨습니까?</string>
+    <string name="check_2_string">2. 제품의 기본 작동 상태가 이상 없음을 확인하셨습니까?</string>
+    <string name="check_3_string">3. 제품의 사용법에 대해서 설명을 받으셨습니까?</string>
+    <string name="check_4_string">4. 휴대 전화 페어링은 정상적으로 되었습니까? (IOT 제품)</string>
+    <string name="check_5_string">5. 스마트 홈 쿠폰은 등록 완료하셨습니까? (IOT 제품)</string>
+    <string name="check_6_string">6. 제품에 이상이 없음을 확인하였고 제품 설치 이후에 발생하는 외관 불량에 대해 선일 금고는 책임이 없음을 확인합니다.
+    </string>
+    <string name="check_7_string">동의</string>
+    <string name="check_8_string">동의하지 않음</string>
+    <string name="add_components_check">구성 요소 추가 확인</string>
+
+    <string name="user_agree1">1) 개인 정보의 수비, 이용 목적 : 제품 안내, 서비스 제공을 위함</string>
+    <string name="user_agree2">2) 수집하려는 개인 정보 항목 : 위에 기재 한 개인 정보에 한함</string>
+    <string name="user_agree3">3) 개인 정보 보유 및 이용 기간 : 수집 및 서비스 제공 목적이 없어지는 즉시 파기</string>
+    <string name="user_agree4">4) 동의를 거부 할 수 있으며, 거부시 제공되는 서비스가 제한 될 수 있습니다</string>
+    <string name="user_agree5">개인 정보 수집 및 이용에 동의하십니까?</string>
+    <string name="user_agree6">고객 확인</string>
+    <string name="user_agree7">(공간 부족으로 상하 폭 줄여서 표현 했으니 개발시에는 상하 폭을 늘려주세요. 4 : 3 비율)</string>
+
+    <string name="btn_confirm">확인</string>
+    <string name="btn_cancel">취소</string>
+    <string name="confirm_text">확인하다</string>
+    <string name="retry_text">다시 해 보다</string>
+
+    <string name="save_text">저장</string>
+    <string name="cancel_text">초기화</string>
+
+    //Module_2_stirng
+    <string name="product_name">제품명</string>
+    <string name="SN">SN</string>
+    <string name="checker">확인자</string>
+    <string name="relations">관계</string>
+    <string name="chekc_days">확인 일</string>
+    <string name="customer_check_singnature">고객 확인 (서명)</string>
+    <string name="dc_comfirm_sign">DC_CONFIRM_SIGN</string>
+    <string name="DCD">미배송사유</string>
+    <string name="shipping_list">배송리스트</string>
+    <string name="more_information">상세 정보</string>
+    <string name="install_confirmation">설치 확인서</string>
+    <string name="dc_not">DC_NOTDLV (KEYIN) 3 lines 100자</string>
+
+    <string-array name="spinner_1">
+        <item>D.FG_RELATION</item>
+        <item>K.FC_RELATION</item>
+        <item>C.FC_RELATION</item>
+        <!--<item>liverpool.FC_RELATION</item>-->
+        <!--<item>Yangon.FC_RELATION</item>-->
+        <!--<item>Barcelona.FC_RELATION</item>-->
+        <!--<item>Juventus.FC_RELATION</item>-->
+        <!--<item>PSG.FC_RELATION</item>-->
+    </string-array>
+
+    <string-array name="spinner_2">
+        <item>DT_DLV</item>
+        <item>CZI_DLV</item>
+        <item>S4_DLV</item>
+        <item>CLICK_DLV</item>
+    </string-array>
+
+    <string-array name="spinner_3">
+        <item>D.CD_NOTDLV</item>
+        <item>D.DVD_NOTDLV</item>
+        <item>C.EVD_NOTDLV</item>
+        <item>M.MP3_NOTDLV</item>
+    </string-array>
+
+    <string name="complete_processing">완료 처리 (설치)</string>
+    <string name="shipment_complement">배송 완료 비고</string>
+    <string name="classification">유무상 구분</string>
+    <string name="dtp">결제 수단</string>
+    <string name="dam">배송비</string>
+    <string name="defa">확인자</string>
+    <string name="dfg">관계</string>
+    <string name="keyin">배송비 합계</string>
+    <string name="dam_eq">장비 비용</string>
+    <string name="date_confirm">확인일</string>
+    <string name="installation">설치사진</string>
+    <string name="camera">카메라</string>
+    <string name="photo_gallery">갤러리</string>
+    <string name="customer_identification">고객확인(서명)</string>
+    <string name="title_activity_mail_server">MailServer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    // mail_server_stirng
+    <string name="GSHMail">GSHMail</string>
+    <string name="mail">mail.globalmsh.com</string>
+    <string name="basic">기본</string>
+    <string name="social">소설</string>
+    <string name="promotion">프로모션</string>
+    <string name="test">테스트</string>
+    <string name="propagation_labels">개 최근 라벨</string>
+    <string name="junk_mail">정그 메일</string>
+    <string name="labels">정그 메일</string>
+    <string name="Star_surface">법 표면 지않</string>
+    <string name="Reminder_mailbox">중요면 지함</string>
+    <string name="Signifcant_Mailboxes">중요면 지함</string>
+    <string name="Sent_face">예약 편지함</string>
+    <string name="Outbox">보낼 편지함</string>
+    <string name="mail_search">메일 검색</string>
+    <string name="all_labels">모든 라벨</string>
+    <string name="access_time">다시 알림 편지함</string>
+
+    <string name="text_string">
+        한국의 신화에 따르면, 한국의 역사는 단군이
+        기원전 2333 년에 조선을 설립 한 때부터 시작됩니다
+        (55 세, 14 세 왕조와 구별하기 위해 고조선 또는
+        고조선으로도 알려짐). 고조선은 북부 한반도와 만주의 일부를 통제 할 때까지 확장되었다. 조재 기자의 기원은 기원전 12 세기에 시작된 것으로 알려져 있지만 그 존재와 역할은 근대에 논란이되고있다.
+        기원전 108 년 한 왕조는 위만 조선을 격퇴하고 한반도에 4 개의 사
+    </string>
+    <string name="reply">댓글</string>
+    <string name="reply_all">모든 응답</string>
+    <string name="forward">앞으로</string>
+    <string name="trash">폐물</string>
+    <string name="move">움직임</string>
+
+    <string name="shipping_detail">배송상세정보</string>
+    <string name="customer_code">고객 코드</string>
+    <string name="customer_mobile_number">휴대 번호</string>
+    <string name="customer_phone_number">전화 번호</string>
+    <string name="customer_registration">등록처</string>
+    <string name="cp_cd_province">광역시도</string>
+    <string name="cp_city">시군구</string>
+    <string name="uniqueness">특이 사항</string>
+    <string name="save">수정 저장</string>
+    <string name="assigment">할당리스트</string>
+    <string name="reception_info">접수정보</string>
+    <string name="complete">완료 처리</string>
+    <string name="cust_info">고객 정보</string>
+    <string name="receptionInfo">접수 정보</string>
+    <string name="reg_number">접수 번호</string>
+    <string name="how_to_reg">접수 방법</string>
+    <string name="recpt_date">접수일시</string>
+    <string name="receptionist">접수자</string>
+    <string name="cust_name">고객 명</string>
+    <string name="model">모델</string>
+    <string name="volume">용량</string>
+    <string name="pattern">패턴</string>
+    <string name="product_code">제품 코드</string>
+    <string name="where_to_buy">구매처</string>
+    <string name="pd_name">제품명</string>
+    <string name="serial_no">시리얼넘버</string>
+    <string name="symptom_code">증상 코드</string>
+    <string name="detatil_code">상세 코드</string>
+    <string name="sympton_detail">증상 상세</string>
+    <string name="recpt_uniqueness">특이사항</string>
+    <string name="processing">처리 담당</string>
+    <string name="engineer">엔지니어</string>
+    <string name="vst_date">방문일</string>
+    <string name="vst_time">방문시간</string>
+    <string name="category">유무상구분</string>
+    <string name="total_cost">비용합계</string>
+    <string name="parts_cost">부품비</string>
+    <string name="labor">공임</string>
+    <string name="tvl_expense">출장비</string>
+    <string name="agent_fee">대행수수료</string>
+    <string name="progress">진행상태</string>
+    <string name="btn_allocation">할당내역</string>
+    <string name="btn_custinfo">고객정보</string>
+    <string name="btn_complete_process">완료처리</string>
+    <string name="L_DC_SYMPTOM">L.DC_SYMPTOM</string>
+    <string name="L_DC_RMK">L.DC_RMK</string>
+
+    //String From Shipping Detail
+    <string name="dlv_date">배송희망일</string>
+    <string name="consulation_time">협의시간</string>
+    <string name="dlv_category">납품구분</string>
+    <string name="time_div">시간구분</string>
+    <string name="dlv_custname">고객명</string>
+    <string name="dlv_mobile">휴대번호</string>
+    <string name="dlv_phone">전화번호</string>
+    <string name="dlv_address">주소</string>
+    <string name="dlv_orderno">주문번호</string>
+    <string name="dlv_orderdate">주문일</string>
+    <string name="dlv_salechannel">판매채널</string>
+    <string name="dlv_seller">판매처</string>
+    <string name="dlv_pdname">제품명</string>
+    <string name="dlv_serialno">시리얼넘버</string>
+    <string name="dlv_qty">수량</string>
+    <string name="dlv_stairway">계단구분</string>
+    <string name="dlv_stairtype">계단종류</string>
+    <string name="dlv_equipment">장비구분</string>
+    <string name="dlv_house_classification">주택구분</string>
+    <string name="dlv_instal_loation">설치위치</string>
+    <string name="dlv_weight">중량</string>
+    <string name="dlv_shipping_fee">배송비</string>
+    <string name="dlv_eqcost">장비비용</string>
+    <string name="dlv_totalshipping">배송비합계</string>
+    <string name="dlv_headoffice">본사담당</string>
+    <string name="dlv_shipping_cost">배송비고</string>
+    <string name="btn_complete_shipping">배송리스트</string>
+    <string name="dlv_complete_processing">완료처리</string>
+    <string name="dlv_install_confirmation">설치확인서</string>
+
+    <string name="SHIPPING_LIST">배송리스트</string>
+    <string name="SYS_USER_NM_USER">배송 기사</string>
+    <string name="DCD_VEHICLE">배송 차량</string>
+    <string name="DDT_DLV_SCH">배송일</string>
+
+    <string-array name="array_name">
+        <item>Array Item One</item>
+        <item>Array Item Two</item>
+        <item>Array Item Three</item>
+    </string-array>
+    <string-array name="array">
+        <item>Array One</item>
+        <item>Array Two</item>
+        <item>Array Three</item>
+    </string-array>
+
+    //Action Complete Strings
+    <string name="as_action_complete">AS조치완료</string>
+    <string name="sn">SN</string>
+    <string name="as_cust_name">고객명</string>
+    <string name="as_pd_name">제품명</string>
+    <string name="as_symptom_code">증상</string>
+    <string name="detail_code">상세코드</string>
+    <string name="action_code">조치코드</string>
+    <string name="as_action">조치사항</string>
+    <string name="absence">유무상</string>
+    <string name="btn_parts_used">사용부품</string>
+    <string name="parts_supplier">부품비</string>
+    <string name="as_labor">공임</string>
+    <string name="foot_equipment">출장비</string>
+    <string name="as_total_expense">비용합계</string>
+    <string name="as_payment_method">결제수단</string>
+    <string name="as_before_action">조치전</string>
+    <string name="as_after_action">조치후</string>
+    <string name="btn_as_camera">카메라</string>
+    <string name="btn_as_gallery">갤러리</string>
+    <string name="as_btn_complete">완료</string>
+    <string name="btn_as_cancel">취소</string>
+    <string name="title_activity_home_page">Smart Notes</string>
+    <string name="shipping_article">배송기사</string>
+    <string name="delivery_vehicel">배송차량</string>
+    <string name="delivery_date">배송일</string>
+    <string name="time">시간</string>
+    <string name="municipal">시군구</string>
+    <string name="customer_name_1">고객명</string>
+    <string name="product_name_1">품명</string>
+    <string name="contact">연락처</string>
+    <string name="quantity_1">수량</string>
+    <string name="join_delivery">공동배송</string>
+    <string name="delivery_category">납품구분</string>
+    <string name="select_date">날짜 선택</string>
+    <string name="as_model_name">모델명</string>
+    <string name="btn_dl_detail">상세정보</string>
+    <string name="btn_dl_complete">완료처리</string>
+    <string name="btn_dl_install_confirm">설치확인서</string>
+    <string name="btn_as_cust_info">고객정보</string>
+    <string name="title_allocation_list">AS할당리스트</string>
+    <string name="btn_as_to_reception_info">접수정보</string>
+    <string name="btn_as_to_ascomplete">완료처리</string>
+    <string name="title_customer_info">고객정보</string>
+    <string name="title_delivery_list">배송리스트</string>
+    <string name="btn_to_allocationlist">할당리스트</string>
+    <string name="dlv_complete_rmk">배송완료비고</string>
+    <string name="dlv_com_ins_additional_cost">추가비용</string>
+    <string name="cust_varification_sign">고객확인(서명)</string>
+    <string name="engineer_in_charge">담당엔지니어</string>
+    <string name="date_of_processing">처리요청일</string>
+    <string name="title_delivery_detail">배송상세정보</string>
+    <string name="title_delivery_complete_delivery">완료처리(납품)</string>
+    <string name="title_delivery_complete_install">완료처리(설치)</string>
+    <string name="title_reception_information">접수정보</string>
+    <string name="btn_lookup">조회</string>
+
+    <string name="r_m_m_l_tb_tv1">No</string>
+    <string name="r_m_m_l_tb_tv2">품명</string>
+    <string name="r_m_m_l_tb_tv3">단가</string>
+    <string name="r_m_m_l_tb_tv4">수량</string>
+
+    <string name="r_m_prod_name">제품명</string>
+    <string name="registering_message_generating">InstanceID 토큰 생성중...</string>
+    <string name="registering_message_complete">InstanceID 완료!</string>
+
+    //Approval Activity
+    <string name="msg_no_file">첨부파일이 존재하지 않습니다.</string>
+    <string name="msg_loading">로딩중입니다.</string>
+    <string name="msg_finish_erp">ERP메뉴를 종료하시겠습니까?</string>
+    <string name="title_fragment_menu_99">그룹웨어</string>
+    <string name="msg_no_row_select">선택된 행이 없습니다.</string>
+    <string name="msg_comment_delete_myself">본인 코멘트만 삭제 가능합니다.</string> //You can only delete your own comments
+    <string name="msg_delete">삭제하시겠습니까?</string>
+    <string name="msg_search_none">조회된 건이 존재하지 않습니다.</string>
+    <string name="msg_save_ok">저장이 완료되었습니다.</string>
+    <string name="msg_save_error">저장중 오류가 발생했습니다.</string>
+    <string name="msg_not_prepared">메뉴가 아직 준비되지 않았습니다.</string>
+    <string name="msg_search_error">조회중 오류가 생겼습니다.</string>
+    <string name="msg_delete_ok">삭제완료되었습니다.</string>
+
+    //Approval Activity Routes
+    <string name="approval_activity_route">SP_GRW_APP_DETAIL_MBL</string>
+
+    //Message Acitivty
+    <string name="title_emp_help">사원도움창</string>
+    <string name="msg_send">전송하시겠습니까?</string>
+
+    //Approval Activity
+    <string name="positive_btn">Positive Button</string>
+
+    //Board Activity
+    <string name="dialog_comment_title">코멘트 등록</string>
+    <string name="dialog_comment_msg">코멘트를 적어주세요</string>
+    <string name="msg_reply_no">댓글이 있는 글은 삭제할수 없습니다.</string>
+    <string name="title_delete">지우다</string>
+    <string name="photo_register_message">완료처리 전에 사진을 등록해주세요</string>
+
+
+</resources>

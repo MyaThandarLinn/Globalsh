@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".BoardActivitySub03">
+    <ImageView
+            android:id="@+id/img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_document"
+            android:padding="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"/>
+
+    <TextView
+            android:id="@+id/txt01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btnReply"
+            android:layout_toRightOf="@+id/img"
+            android:padding="5dp"
+            android:textSize="12sp"
+            android:textColor="@color/iron"
+            android:text="HH"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            app:layout_constraintStart_toEndOf="@+id/img"
+            app:layout_constraintTop_toTopOf="@+id/img"/>
+
+    <TextView
+            android:id="@+id/txt02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt01"
+            android:layout_toLeftOf="@+id/btnReply"
+            android:drawableLeft="@drawable/ic_people"
+            android:drawablePadding="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/iron"
+            android:text="홍길동"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            app:layout_constraintTop_toBottomOf="@+id/txt01" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/btnReply"
+            app:layout_constraintBottom_toBottomOf="@+id/img"/>
+
+    <Button
+            android:id="@+id/btnReply"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_toLeftOf="@+id/btnDelete"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"
+            android:text="답글"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+            app:layout_constraintBottom_toBottomOf="@+id/img" app:layout_constraintTop_toTopOf="@+id/img"/>
+
+    <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:background="@color/colorAccent"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:text="삭제"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnReply" app:layout_constraintBottom_toBottomOf="@+id/btnReply"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

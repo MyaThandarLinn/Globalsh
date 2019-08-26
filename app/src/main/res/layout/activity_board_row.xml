@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:id="@+id/img01"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:scaleType="center"
+            android:src="@drawable/ic_document"/>
+
+    <TextView
+            android:id="@+id/txt01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/img01"
+            android:padding="5dp"
+            android:textColor="@color/iron"
+            android:text="게시판 리스트"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+            android:id="@+id/txtBadge01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/badge_rectangle_board"
+            android:gravity="center"
+            android:text="9"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFF"
+            android:textStyle="bold"/>
+
+</RelativeLayout>

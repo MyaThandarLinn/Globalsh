@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/shipping_list"
+                android:icon="@drawable/shipping_list_car"
+                android:title="@string/title_delivery_list"/>
+        <item
+                android:id="@+id/as_allocation_list"
+                android:icon="@drawable/ic_as_allocation"
+                android:title="@string/title_allocation_list"/>
+        <item
+                android:id="@+id/exit_from_erp"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/title_fragment_menu_99"/>
+    </group>
+
+</menu>

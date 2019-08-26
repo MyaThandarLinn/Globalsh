@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        tools:context=".BoardActivitySub02">
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="true"/>
+    </FrameLayout>
+
+    <LinearLayout
+            android:id="@+id/ll_layout01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+    android:background="@color/colorPrimary">
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"
+                android:textColor="#fff"
+                android:layout_margin="5dp"
+                android:text="답글"/>
+
+        <Button
+                android:id="@+id/btnFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorAccent"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:text="첨부파일"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:enabled="true"
+            android:key="Company"
+            android:textColor="#FFF"
+            android:title="디폴트 설정">
+        <EditTextPreference
+                android:defaultValue="8001"
+                android:key="CD_FIRM"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:summary="회사코드를 설정합니다."
+                android:title="회사코드 설정"/>
+
+        <EditTextPreference
+                android:defaultValue="192.168.0.10"
+                android:key="IP"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:summary="회사 IP를 설정합니다."
+                android:title="IP설정"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

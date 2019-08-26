@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="g2sysnet.smart_gw">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:logo="@drawable/ic_launcher_background"
+            android:networkSecurityConfig="@xml/network_security_config"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="com.mydomain.fileprovider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+        <activity android:name=".MessageEmp"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".MessageP2"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"
+        />
+        <activity android:name=".BoardActivity"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".BoardActivitySub01"
+                  android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".BoardActivitySub02"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme"
+        >
+        </activity>
+
+        <activity android:name=".BoardActivitySub03"
+                  android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".MessageP1"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"
+        >
+
+        </activity>
+        <activity android:name=".Message"
+                  android:screenOrientation="portrait"
+        >
+
+        </activity>
+        <activity android:name=".DeptActivity"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+                android:name=".ApprovalActivitySub02"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+                android:name=".ApprovalActivitySub03"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+                android:name=".ApprovalActivitySub01"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Dark"
+                >
+        </activity>
+        <activity
+                android:name=".ApprovalActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Dark"
+                >
+        </activity>
+        <activity
+                android:name=".RequiredMaterialList"
+                android:screenOrientation="portrait"
+                android:noHistory="true"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".MenuPage"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.Dark">
+        </activity>
+        <activity
+                android:name=".HomePage"
+                android:screenOrientation="portrait"
+                android:label="@string/title_activity_home_page"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".ItemHelpPopup"
+                android:screenOrientation="portrait"
+                android:noHistory="true"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".ASComplete"
+                android:screenOrientation="portrait"
+                android:label="@string/as_action_complete"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".ReceptionInformation"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".CustomerInformation"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".AsAllocationList"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".DeliveryCompleteDelivery"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".DeliveryCompleteInstall"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme"
+        >
+        </activity>
+        <activity
+                android:name=".InstallationConfirmation"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".DeliveryDetail"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity
+                android:name=".DeliveryList"
+                android:screenOrientation="portrait"
+                android:theme="@style/PagesTheme">
+        </activity>
+        <activity android:name=".settings.SettingActivity"
+                  android:screenOrientation="portrait"
+        >
+        </activity>
+        <activity
+                android:name=".LoginActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+                android:name=".SmartNoteFlash"
+                android:screenOrientation="portrait"
+                android:noHistory="true"
+                android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserInfo"
+                  android:screenOrientation="portrait"
+                  android:theme="@style/AppTheme.NoActionBar"
+        />
+
+        <service
+                android:name=".services.RegistrationIntentService"
+                android:exported="false"/>
+
+        <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>

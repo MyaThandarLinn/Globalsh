@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MessageP2"
+        android:background="#303F9F">
+
+    <TextView
+            android:text="보낸사람"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/sdr"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/msg2_txt_sender"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <TextView
+            android:text="홍길동"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            android:id="@+id/msg2_txt_sender"
+            app:layout_constraintBottom_toBottomOf="@+id/sdr"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintTop_toTopOf="@+id/sdr"
+            app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="받는사람"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/textView72"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            app:layout_constraintStart_toStartOf="@+id/sdr"
+            app:layout_constraintEnd_toEndOf="@+id/sdr"
+            app:layout_constraintTop_toBottomOf="@+id/sdr" app:layout_constraintHorizontal_bias="0.0"/>
+    <ImageButton
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel"
+            android:id="@+id/msg2_uncheck_message"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@android:color/transparent"
+            app:layout_constraintTop_toTopOf="@+id/textView72"
+            app:layout_constraintStart_toEndOf="@+id/textView72"
+            app:layout_constraintBottom_toBottomOf="@+id/textView72"
+            app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+            android:text="홍길동; 이주한"
+            android:layout_width="255dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:id="@+id/msg2_txt_recipients"
+            android:gravity="center_vertical"
+            android:textColor="#fff"
+            app:layout_constraintTop_toTopOf="@+id/msg2_uncheck_message"
+            app:layout_constraintBottom_toBottomOf="@+id/msg2_uncheck_message"
+            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/msg2_uncheck_message"
+    />
+    <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_person"
+            android:id="@+id/msg2_btn_emp"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="@+id/msg2_txt_sender"
+            app:layout_constraintTop_toTopOf="@+id/msg2_txt_recipients"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/msg2_uncheck_message"
+            app:layout_constraintVertical_bias="0.0"/>
+    <EditText
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            android:paddingLeft="10dp"
+            android:textColor="#fff"
+            android:paddingTop="10dp"
+            android:id="@+id/msg2_txt_content"
+            android:background="#5e6fe7"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/msg2_txt_recipients"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintStart_toStartOf="@+id/msg2_txt_content"
+                  app:layout_constraintEnd_toEndOf="@+id/msg2_txt_content" android:layout_marginTop="32dp"
+                  app:layout_constraintTop_toBottomOf="@+id/msg2_txt_content">
+
+        <Button
+                android:text="보내기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/msg2_btn_send"
+                android:background="#010a46"
+                android:textColor="#fff"
+                android:layout_marginRight="10dp"
+                />
+
+        <Button
+                android:text="취소"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/msg2_btn_cancel"
+                android:background="#010a46"
+                android:textColor="#fff"
+               />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

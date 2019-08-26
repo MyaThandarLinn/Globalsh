@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_document"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txt01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="코멘트 내용"
+        android:layout_toRightOf="@+id/img"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txt02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:drawableLeft="@drawable/ic_people"
+        android:drawablePadding="5dp"
+        android:text="홍길동"
+        android:layout_below="@+id/txt01"
+        android:layout_alignParentRight="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:paddingRight="5dp"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#5C6BC0"
+          android:layout_below="@+id/txt02"
+    />
+
+</RelativeLayout>
